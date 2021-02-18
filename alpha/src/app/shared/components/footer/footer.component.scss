@@ -1,16 +1,20 @@
 footer{
+    .container{
+        max-width: 1124px;
+        width: 100%;
+        margin: 0 auto;
+      }
     background-color: #5C656B;
     .logo-socials-wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
         .logo{
-            
+            margin-bottom: 25px;
             a{
                 
                 img{
                     width: 100%;
-                    // აქ ა ტეგს სიმაღლე ვერმოვუმატე, კლიკს ვერაკეთებს
                 }
             }
         }
@@ -23,6 +27,7 @@ footer{
     .main-content{
         display: flex;
         .for-me{
+            margin-right: 80px;
             ul{
                 list-style: none; 
                 // ^ ეს მინდა გლობალური გავხადო
@@ -46,6 +51,7 @@ footer{
             }
         }
         .for-business{
+            margin-right: 80px;
             ul{
                 list-style: none; 
                 // ^ ეს მინდა გლობალური გავხადო
@@ -68,6 +74,7 @@ footer{
             }
         }
         .about-us{
+            margin-right: 80px;
             ul{
                 list-style: none; 
                 // ^ ეს მინდა გლობალური გავხადო
@@ -90,6 +97,7 @@ footer{
             }
         }
         .contact{
+            margin-right: 80px;
             ul{
                 list-style: none; 
                 // ^ ეს მინდა გლობალური გავხადო
@@ -106,6 +114,27 @@ footer{
                         text-decoration: none;
                         color: #F6F6F6;
                         font-size: 12px;
+                    }
+                    // ესენიც ყველა
+                }
+                
+            }
+        }
+        .our-apps{
+            ul{
+                list-style: none; 
+                // ^ ეს მინდა გლობალური გავხადო
+                :first-child{
+                    margin-bottom: 15px;
+                }
+                li{
+                    .footer-title-fifth{
+                        font-size: 18px;
+                        color: #ffffff;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #F6F6F6;
                     }
                     // ესენიც ყველა
                 }
