@@ -4,5 +4,113 @@ footer{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        .logo{
+            
+            a{
+                
+                img{
+                    width: 100%;
+                    // აქ ა ტეგს სიმაღლე ვერმოვუმატე, კლიკს ვერაკეთებს
+                }
+            }
+        }
+        .socials{
+            width: 140px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    .main-content{
+        display: flex;
+        .for-me{
+            ul{
+                list-style: none; 
+                // ^ ეს მინდა გლობალური გავხადო
+                :first-child{
+                    margin-bottom: 15px;
+                }
+                li{
+                    margin-bottom: 5px;
+                    .footer-title-first{
+                        font-size: 18px;
+                        color: #ffffff;
+                        
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #F6F6F6;
+                        font-size: 12px;
+                    }
+                }
+                
+            }
+        }
+        .for-business{
+            ul{
+                list-style: none; 
+                // ^ ეს მინდა გლობალური გავხადო
+                :first-child{
+                    margin-bottom: 15px;
+                }
+                li{
+                    margin-bottom: 5px;
+                    .footer-title-second{
+                        font-size: 18px;
+                        color: #ffffff;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #F6F6F6;
+                        font-size: 12px;
+                    }
+                }
+                
+            }
+        }
+        .about-us{
+            ul{
+                list-style: none; 
+                // ^ ეს მინდა გლობალური გავხადო
+                :first-child{
+                    margin-bottom: 15px;
+                }
+                li{
+                    margin-bottom: 5px;
+                    .footer-title-third{
+                        font-size: 18px;
+                        color: #ffffff;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #F6F6F6;
+                        font-size: 12px;
+                    }
+                }
+                
+            }
+        }
+        .contact{
+            ul{
+                list-style: none; 
+                // ^ ეს მინდა გლობალური გავხადო
+                :first-child{
+                    margin-bottom: 15px;
+                }
+                li{
+                    margin-bottom: 5px;
+                    .footer-title-fifth{
+                        font-size: 18px;
+                        color: #ffffff;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #F6F6F6;
+                        font-size: 12px;
+                    }
+                    // ესენიც ყველა
+                }
+                
+            }
+        }
     }
 }
