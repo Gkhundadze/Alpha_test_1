@@ -8,13 +8,11 @@
             </p>
         </div>
         <div class="forBusinessSection">
-            <drag-scroll *ngFor="let item of imgData">
-                <div class="drag-scroll">
+            <drag-scroll>
+                <div *ngFor="let item of imgData" class="drag-scroll" drag-scroll-item>
                     <p>{{item.imageId}}</p>
-                    <img [src]="item.imageUrl" drag-scroll-item  [alt]="item.imageId">
-                </div>
-                
-
+                    <img [src]="item.imageUrl" [alt]="item.imageId">
+                </div>                
             </drag-scroll>
         </div>
     </div>
