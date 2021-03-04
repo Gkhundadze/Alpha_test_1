@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home/home.component';
+import { DragScrollModule } from 'ngx-drag-scroll';
+
 
 
 @NgModule({
   declarations: [HomeComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    DragScrollModule
   ]
 })
 export class HomeModule { }

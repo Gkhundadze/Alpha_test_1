@@ -1,0 +1,21 @@
+.for-your-business{
+    .title{
+        text-align: center;
+        h3{
+            font-size: 48px; 
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .forBusinessSection{
+        drag-scroll {
+            height: 200px;
+            width: 250px;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+          }
+    }
+}
