@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="for-your-business">
     <div class="container">
         <div class="title">
@@ -8,12 +20,14 @@
             </p>
         </div>
         <div class="forBusinessSection">
-            <drag-scroll>
-                <div *ngFor="let item of imgData" class="drag-scroll" drag-scroll-item>
-                    <p>{{item.imageId}}</p>
+            <drag-scroll drag-scroll #nav>
+                <div *ngFor="let item of imgData" class="drag-scroll mt-2 mx-2" drag-scroll-item>
                     <img [src]="item.imageUrl" [alt]="item.imageId">
-                </div>                
+                    <p class="text-center text-dark fs-3">{{item.imageTitle}}</p>
+                </div>
             </drag-scroll>
+            <button class="slider-left-btn p-2 border-0 bg-transparent" (click)="moveLeft()"><i class="fas fa-chevron-circle-left"></i></button>
+            <button class="slider-right-btn p-2 border-0 bg-transparent" (click)="moveRight()"><i class="fas fa-chevron-circle-right"></i></button>
         </div>
     </div>
 </section>
