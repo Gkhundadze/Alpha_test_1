@@ -1,6 +1,36 @@
 
 
 
+<section class="for-you">
+<div class="container">
+    <div class="title">
+        <h3 class="my-1">შენთვის</h3>
+        <p class="my-1">ალფა მრავალფეროვან პროდუქტებს გთავაზობს შენი ქონებისა და პასუხისმგებლობის დასაზღვევად. შენზე მორგებული პირობების მისაღებად მიმართე აგენტს.
+        </p>
+    </div>
+    <div class="for-you-section">
+        <div class="d-flex justify-content-center flex-wrap"> <!-- card block parent-->
+            <div class="your-card mx-2" *ngFor='let cardItem of cardData'> <!-- card block--> 
+                <img class="card-img-icon" [src]="cardItem.logoPath" [alt]="cardItem.title"> <!-- card icon-->
+                <img class="w-100" [src]="cardItem.imgPath" [alt]="cardItem.title"> <!-- card img-->
+                <p class="text-center my-1 title ">{{cardItem.title}}</p> <!-- card title-->
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -13,8 +43,8 @@
 <section class="for-your-business">
     <div class="container">
         <div class="title">
-            <h3>შენი ბიზნესისთვის</h3>
-            <p>დაცულია თუ არა შენი ბიზნესი? იცი რა ეღირება შენი ბიზნესის დაცვა? ალდაგი უზრუნველყოფს სადაზღვევო დაფარვებს
+            <h3 class="my-1">შენი ბიზნესისთვის</h3>
+            <p class="my-1">დაცულია თუ არა შენი ბიზნესი? იცი რა ეღირება შენი ბიზნესის დაცვა? ალდაგი უზრუნველყოფს სადაზღვევო დაფარვებს
                 ათი ათასობით მცირე მეწარმისთვის. ჩვენ გთავაზოვთ შენი ბიზნეს საქმიანობის უნიკალურ საჭიროებებზე მორგებულ
                 დაფარვებს. ჩვენი მომხმარებლების 93% რეკომენდაციას უწევს ალდაგს.
             </p>

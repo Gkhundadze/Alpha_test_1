@@ -1,3 +1,35 @@
+.for-you{
+    .title{
+        text-align: center;
+        h3{
+            font-size: 48px;
+            
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    .for-you-section{
+        .your-card{
+            position: relative;
+            height: 327px;
+            width: 346px;
+            .card-img-icon{
+                position: absolute;
+                top: 5%;
+                left: 5%;
+            }
+            p{
+                font-size: 24px;
+                color: #5C656B;
+            }
+        }
+    }
+}
+
+
+
+
 .for-your-business{
     .title{
         text-align: center;

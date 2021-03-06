@@ -1,29 +1,25 @@
 <header class="bg-dark">
     <div class="container">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#"><img src="../../../../assets/logos/main-logo/main-logo.png" alt=""></a>
+            <a class="navbar-brand" [routerLink]='["home"]'><img src="../../../../assets/logos/main-logo/main-logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-light"><i class="fas fa-bars"></i></span>
               </button>
-          
             <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">ჩემთვის <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" [routerLink]='["forMe"]'>ჩემთვის </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">ბიზნესისთვის</a>
+                  <a class="nav-link" [routerLink]='["forBusiness"]'>ბიზნესისთვის</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">კომპანია</a>
+                  <a class="nav-link" [routerLink]='["company"]'>კომპანია</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">ჩემი კაბინეტი</a>
+                  <a class="nav-link rounded my-cabinet-button" [routerLink]='["myCabinet"]'>ჩემი კაბინეტი</a>
                 </li>
-               
-              
-              </ul>
-              
+              </ul>             
             </div>
           </nav>
     </div>

@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild, } from '@angular/core';
 import { DragScrollComponent } from 'ngx-drag-scroll';
+import { CardData } from 'src/app/interfaces/card-data';
 import { ImageData } from "src/app/interfaces/image-data";
+import { CardDataService } from 'src/app/services/card-data.service';
 import { SliderPathService } from 'src/app/services/slider-path.service';
 
 
@@ -11,8 +13,11 @@ import { SliderPathService } from 'src/app/services/slider-path.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public imgData:ImageData[] = []
-constructor( private imagesDb:SliderPathService){
+  public imgData:ImageData[] = [];
+  public cardData:CardData[] = [];
+constructor( 
+  private cardsDb: CardDataService,
+  private imagesDb: SliderPathService,){
 
 }
 
@@ -28,8 +33,10 @@ constructor( private imagesDb:SliderPathService){
     this.ds.moveRight();
   }
   ngOnInit(){
-    this.imgData = this.imagesDb.imgData
+    this.imgData = this.imagesDb.imgData;
+    this.cardData = this.cardsDb.cardData;
     
+  
   }
 
 }

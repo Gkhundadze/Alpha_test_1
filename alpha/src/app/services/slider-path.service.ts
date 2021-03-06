@@ -8,7 +8,7 @@ import { ImageData } from '../interfaces/image-data';
 export class SliderPathService {
   public imgData:ImageData[] = [
     {
-      imageId: 0, 
+      imageId: 0,
       imageUrl: '../../../../../../assets/slider/agro.png',
       imageTitle: 'აგრო დაზღვევა'
     },
