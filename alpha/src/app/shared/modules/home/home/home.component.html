@@ -1,6 +1,3 @@
-
-
-
 <section class="for-you">
 <div class="container">
     <div class="title">
@@ -58,6 +55,29 @@
             </drag-scroll>
             <button class="slider-left-btn p-2 border-0 bg-transparent" (click)="moveLeft()"><i class="fas fa-chevron-circle-left"></i></button>
             <button class="slider-right-btn p-2 border-0 bg-transparent" (click)="moveRight()"><i class="fas fa-chevron-circle-right"></i></button>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="last-sections">
+    <div class="our-apps d-flex justify-content-around align-items-center">
+        <div class="title py-3 px-5">
+            <h5>გადმოწერე ჩვენი აპლიკაცია</h5>
+            <p>და ისარგებლე <br> ჩვენი სერვისებით უფრო მოხერხებულად</p>
+        </div>
+        <div class="apps d-flex flex-column">
+            <div class="play-store mb-2">
+                <a [routerLink]='["/company/apps"]'>
+                    <img class="" src="../../../../../assets/icons/store/app_store.png" alt="app store">
+                </a>
+            </div>
+            <div class="app_store mt-2">
+                <a [routerLink]='["/company/apps"]'>
+                    <img class="" src="../../../../../assets/icons/store/play_store.png" alt="play store">
+                </a>
+            </div>
         </div>
     </div>
 </section>
