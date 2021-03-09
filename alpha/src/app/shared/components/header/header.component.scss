@@ -1,20 +1,23 @@
 header{
     padding-bottom: 20px;
-    nav{
-        a{
-            text-decoration: none;
-            color: rgb(193, 221, 221);
-            
-        }
-        ul{
-            li{
-                a{ 
-                
-                }
-                .my-cabinet-button{
-                    background-color: #E84F5B;
+    .container{
+        nav{
+            height: 100px;
+            a{
+                text-decoration: none;
+                color: rgb(193, 221, 221); 
+            }
+            ul{
+                li{
+                    a{ 
+                    
+                    }
+                    .my-cabinet-button{
+                        background-color: #E84F5B;
+                    }
                 }
             }
         }
     }
+        
 }
