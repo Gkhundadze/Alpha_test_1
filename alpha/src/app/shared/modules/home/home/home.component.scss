@@ -13,9 +13,25 @@
             font-size: 32px;
             padding-bottom: 8px;
             border-bottom: 3px solid #E84F5B;
+            @media (max-width: 1170px){
+                font-size: 24px;
+            }
+            @media (max-width: 960px){
+                font-size: 18px;
+            }
         }
         p{
             font-size: 18px;
+            @media (max-width: 1170px){
+                font-size: 14px;
+            }
+            @media (max-width: 960px){
+                font-size: 12px;
+            }
+            @media (max-width: 840px){
+                display: none;
+            }
+        
         }
     }
 }
