@@ -50,10 +50,15 @@
             position: relative;
             height: 327px;
             width: 346px;
+            :hover{
+                opacity: 0.9;
+                transition: 0.2s;
+            }
             .card-img-icon{
                 position: absolute;
                 top: 5%;
                 left: 5%;
+                
             }
             p{
                 font-size: 24px;
@@ -62,7 +67,32 @@
         }
     }
 }
-
+.individual-packets-section{
+    .packet-block{
+        width: 365px;
+        height: 257px;
+        background-color: #E84F5B;
+        color: #fff;
+        position: relative;
+        :hover{
+            background-color: #e4646f;
+            transition: 0.2s;
+        }
+    }
+    img{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 45px;
+        display: block;
+    }
+    h4{
+        font-size: 26px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
 
 
 

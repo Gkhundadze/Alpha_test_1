@@ -2,8 +2,10 @@ import { Component, OnInit, ViewChild, } from '@angular/core';
 import { DragScrollComponent } from 'ngx-drag-scroll';
 import { CardData } from 'src/app/interfaces/card-data';
 import { ImageData } from "src/app/interfaces/image-data";
+import { IndividualPackets } from 'src/app/interfaces/individual-packets';
 import { MainSliderData } from 'src/app/interfaces/main-slider-data';
 import { CardDataService } from 'src/app/services/card-data.service';
+import { IndividualPacketsService } from 'src/app/services/individual-packets.service';
 import { MainSliderService } from 'src/app/services/main-slider.service';
 import { SliderPathService } from 'src/app/services/slider-path.service';
 
@@ -18,10 +20,13 @@ export class HomeComponent implements OnInit {
   public imgData:ImageData[] = [];
   public cardData:CardData[] = [];
   public mainSlider: MainSliderData[] = [];
+  public individualPackets: IndividualPackets[] = []
 constructor( 
   private cardsDb: CardDataService,
   private imagesDb: SliderPathService,
-  private mainSliderDb: MainSliderService){
+  private mainSliderDb: MainSliderService,
+  private individualPacketsDb: IndividualPacketsService,
+  ){
 
 }
   @ViewChild('nav', {read: DragScrollComponent, static: true}) ds!: DragScrollComponent;
@@ -38,7 +43,7 @@ constructor(
     this.imgData = this.imagesDb.imgData;
     this.cardData = this.cardsDb.cardData;
     this.mainSlider = this.mainSliderDb.mainSliderData;
-   
+    this.individualPackets = this.individualPacketsDb.individualCardsDb;
     
   
   }
