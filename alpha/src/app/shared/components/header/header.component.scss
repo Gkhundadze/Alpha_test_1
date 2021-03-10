@@ -1,5 +1,11 @@
 header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2222;
     padding-bottom: 20px;
+    opacity: 0.8;
     .container{
         nav{
             height: 100px;

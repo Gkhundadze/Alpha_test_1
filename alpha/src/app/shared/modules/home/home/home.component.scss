@@ -1,9 +1,27 @@
+.main-slider{
+    .main-slider-img{
+        width: 100%;
+    }
+    .main-textbox{
+        position: absolute;
+        left: 10%;
+        bottom: 10%;
+        color: #fff;
+        h4{
+            font-size: 32px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #E84F5B;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
 .for-you{
     .title{
         text-align: center;
         h3{
             font-size: 48px;
-            
         }
         p{
             font-size: 16px;

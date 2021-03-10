@@ -1,3 +1,21 @@
+<drag-scroll class="main-slider" drag-scroll #nav>
+    <div *ngFor="let mainSliderItem of mainSlider" class="drag-scroll mt-2 mx-2 position-relative w-100" drag-scroll-item>
+        <img class="main-slider-img " [src]="mainSliderItem.imagePath" [alt]="mainSliderItem.title">
+        <div class="main-textbox p-3">
+            <h4>{{mainSliderItem.title}}</h4>
+            <p class="pt-2">{{mainSliderItem.description}}</p>
+        </div>
+
+    </div>
+</drag-scroll>
+
+
+
+
+
+
+
+
 <section class="for-you">
 <div class="container">
     <div class="title">
