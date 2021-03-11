@@ -5,17 +5,8 @@
             <h4>{{mainSliderItem.title}}</h4>
             <p class="pt-2">{{mainSliderItem.description}}</p>
         </div>
-
     </div>
 </drag-scroll>
-
-
-
-
-
-
-
-
 <section class="for-you">
 <div class="container">
     <div class="title">
@@ -33,6 +24,9 @@
         </div>
     </div>
     <div class="individual-packets-section">
+        <div class="title text-left my-3">
+            <h3 class="my-1">ინდივიდუალური პაკეტები</h3>
+        </div>
         <drag-scroll class="" drag-scroll>
             <div *ngFor="let packet of individualPackets" class="packet-block mx-2 rounded" drag-scroll-item>
                 <img class="" [src]="packet.iconPath" [alt]="packet.title">
@@ -40,33 +34,11 @@
                     <h4 class="my-5 text-right">{{packet.title}}</h4>
                     <p class="my-5 text-left text-wrap">{{packet.description}}</p>
                 </div>
-        
             </div>
         </drag-scroll>
     </div>
 </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="for-your-business">
     <div class="container">
         <div class="title">
@@ -86,11 +58,23 @@
             <button class="slider-left-btn p-2 border-0 bg-transparent" (click)="moveLeft()"><i class="fas fa-chevron-circle-left"></i></button>
             <button class="slider-right-btn p-2 border-0 bg-transparent" (click)="moveRight()"><i class="fas fa-chevron-circle-right"></i></button>
         </div>
+        <div class="exclusive-packets-section mt-5">
+            <div class="title text-left my-3">
+                <h3 class="my-1">ექსკლუზიური პაკეტები</h3>
+            </div>
+            <drag-scroll class="" drag-scroll>
+                <div *ngFor="let packet of exclusivePackets" class="packet-block mx-2 rounded" drag-scroll-item>
+                    <img class="" [src]="packet.iconPath" [alt]="packet.title">
+                    <div class=" d-flex flex-column h-100">
+                        <h4 class="my-5 text-right">{{packet.title}}</h4>
+                        <p class="my-5 text-left text-wrap">{{packet.description}}</p>
+                    </div>
+            
+                </div>
+            </drag-scroll>
+        </div>
     </div>
 </section>
-
-
-
 <section class="last-sections">
     <div class="our-apps d-flex justify-content-around align-items-center">
         <div class="title py-3 px-5">

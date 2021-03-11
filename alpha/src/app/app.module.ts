@@ -14,7 +14,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     
   ],

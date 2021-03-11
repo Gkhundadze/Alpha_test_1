@@ -68,6 +68,11 @@
     }
 }
 .individual-packets-section{
+    .title{
+        h3{
+            font-size: 32px;
+        }
+    }
     .packet-block{
         width: 365px;
         height: 257px;
@@ -129,7 +134,37 @@
             top: 50%;
             right: 0;
         }
-
+    }
+    .exclusive-packets-section{
+        .title{
+            h3{
+                font-size: 32px;
+            }
+        }
+        .packet-block{
+            width: 365px;
+            height: 257px;
+            background-color: #5C656B;
+            color: #fff;
+            position: relative;
+            :hover{
+                background-color: #7c878f;
+                transition: 0.2s;
+            }
+        }
+        img{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 45px;
+            display: block;
+        }
+        h4{
+            font-size: 26px;
+        }
+        p{
+            font-size: 14px;
+        }
     }
 }
 .last-sections{
