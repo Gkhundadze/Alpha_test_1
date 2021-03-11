@@ -33,11 +33,14 @@ constructor(
 
 }
   @ViewChild('nav', {read: DragScrollComponent, static: true}) ds!: DragScrollComponent;
+  @ViewChild('drag', {read: DragScrollComponent, static: true}) ds2!: DragScrollComponent;
   
   moveLeft() {
     this.ds.moveLeft();
   }
-
+  moveToIndex(i:number){
+    this.ds2.moveTo(i)
+  }
   moveRight() {
     this.ds.moveRight();
   }

@@ -1,12 +1,19 @@
-<drag-scroll class="main-slider" drag-scroll>
-    <div *ngFor="let mainSliderItem of mainSlider" class="drag-scroll mt-2 mx-2 position-relative w-100" drag-scroll-item>
-        <img class="main-slider-img " [src]="mainSliderItem.imagePath" [alt]="mainSliderItem.title">
-        <div class="main-textbox p-3">
-            <h4>{{mainSliderItem.title}}</h4>
-            <p class="pt-2">{{mainSliderItem.description}}</p>
+<div>
+    <drag-scroll class="main-slider" drag-scroll #drag>
+        <div *ngFor="let mainSliderItem of mainSlider" class="drag-scroll mt-2 mx-2 position-relative w-100" drag-scroll-item>
+            <img class="main-slider-img " [src]="mainSliderItem.imagePath" [alt]="mainSliderItem.title">
+            <div class="main-textbox p-3">
+                <h4>{{mainSliderItem.title}}</h4>
+                <p class="pt-2">{{mainSliderItem.description}}</p>
+            </div>
         </div>
+    </drag-scroll>
+    <div >
+        <span *ngFor="let mainSliderItem of mainSlider; let i = index" (click)=" moveToIndex(i)">
+            click
+        </span>
     </div>
-</drag-scroll>
+</div>
 <section class="for-you">
 <div class="container">
     <div class="title">
@@ -27,7 +34,7 @@
         <div class="title text-left my-3">
             <h3 class="my-1">ინდივიდუალური პაკეტები</h3>
         </div>
-        <drag-scroll class="" drag-scroll>
+        <drag-scroll class="individual" drag-scroll>
             <div *ngFor="let packet of individualPackets" class="packet-block mx-2 rounded" drag-scroll-item>
                 <img class="" [src]="packet.iconPath" [alt]="packet.title">
                 <div class=" d-flex flex-column h-100">
