@@ -1,0 +1,58 @@
+.main-slider{
+    margin-top: -100px;
+    .main-slider-img{
+        width: 100%;
+    }
+    .main-textbox{
+        position: absolute;
+        left: 10%;
+        bottom: 10%;
+        color: #fff;
+        background-color: #000;
+        opacity: 0.5;
+        h4{
+            font-size: 32px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #E84F5B;
+            @media (max-width: 1170px){
+                font-size: 24px;
+            }
+            @media (max-width: 960px){
+                font-size: 18px;
+            }
+        }
+        p{
+            font-size: 18px;
+            @media (max-width: 1170px){
+                font-size: 14px;
+            }
+            @media (max-width: 960px){
+                font-size: 12px;
+            }
+            @media (max-width: 840px){
+                display: none;
+            }
+        }
+    }
+}
+.for-you-section{
+    .your-card{
+        position: relative;
+        height: 327px;
+        width: 346px;
+        :hover{
+            opacity: 0.9;
+            transition: 0.2s;
+        }
+        .card-img-icon{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            z-index: 3333333;
+        }
+        p{
+            font-size: 24px;
+            color: #5C656B;
+        }
+    }
+}

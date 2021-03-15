@@ -56,12 +56,19 @@
             </p>
         </div>
         <div class="forBusinessSection">
-            <drag-scroll drag-scroll #nav>
+            <drag-scroll drag-scroll #nav >
                 <div *ngFor="let item of imgData" class="drag-scroll mt-2 mx-2" drag-scroll-item>
                     <img [src]="item.imageUrl" [alt]="item.imageId">
                     <p class="text-center text-dark fs-3">{{item.imageTitle}}</p>
                 </div>
             </drag-scroll>
+
+            <!--  for business slider -->
+            <div class="dots-wrapper">
+                <span class="business-dots" *ngFor='let item of imgData; let i = index' (click)="businessMove(i)">{{i}}</span>
+            </div>
+
+
             <button class="slider-left-btn p-2 border-0 bg-transparent" (click)="moveLeft()"><i class="fas fa-chevron-circle-left"></i></button>
             <button class="slider-right-btn p-2 border-0 bg-transparent" (click)="moveRight()"><i class="fas fa-chevron-circle-right"></i></button>
         </div>
@@ -69,7 +76,7 @@
             <div class="title text-left my-3">
                 <h3 class="my-1">ექსკლუზიური პაკეტები</h3>
             </div>
-            <drag-scroll class="" drag-scroll>
+            <drag-scroll class="individual" drag-scroll>
                 <div *ngFor="let packet of exclusivePackets" class="packet-block mx-2 rounded" drag-scroll-item>
                     <img class="" [src]="packet.iconPath" [alt]="packet.title">
                     <div class=" d-flex flex-column h-100">

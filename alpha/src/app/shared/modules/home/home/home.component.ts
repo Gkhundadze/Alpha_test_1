@@ -34,6 +34,7 @@ constructor(
 }
   @ViewChild('nav', {read: DragScrollComponent, static: true}) ds!: DragScrollComponent;
   @ViewChild('drag', {read: DragScrollComponent, static: true}) ds2!: DragScrollComponent;
+  // @ViewChild('drag', {read: DragScrollComponent, static: true}) ds3!: DragScrollComponent;
   
   moveLeft() {
     this.ds.moveLeft();
@@ -43,6 +44,9 @@ constructor(
   }
   moveRight() {
     this.ds.moveRight();
+  }
+  businessMove(i:number):void{
+    this.ds.moveTo(i)
   }
   ngOnInit(){
     

@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { DragScrollComponent } from 'ngx-drag-scroll';
+import { CardData } from 'src/app/interfaces/card-data';
+import { MainSliderData } from 'src/app/interfaces/main-slider-data';
+import { InsuranceCardsService } from 'src/app/services/insurance-cards.service';
+import { InsuranceMainSliderService } from 'src/app/services/insurance-main-slider.service';
 
 @Component({
   selector: 'app-for-me',
@@ -6,10 +11,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./for-me.component.scss']
 })
 export class ForMeComponent implements OnInit {
+  public mainslider : MainSliderData[] = [];
+  public cardData : CardData[] = [];
+  constructor(
+    private MainSliderDb:InsuranceMainSliderService,
+    private cards: InsuranceCardsService,
+    ) { }
+  // @ViewChild('nav', {read: DragScrollComponent, static: true}) ds!: DragScrollComponent;
 
-  constructor() { }
+
+
 
   ngOnInit(): void {
+    this.mainslider = this.MainSliderDb.insuranceMainData;
+    this.cardData = this.cards.insuranceCards;
+    
   }
 
 }

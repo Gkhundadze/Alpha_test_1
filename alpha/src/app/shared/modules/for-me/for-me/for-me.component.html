@@ -1,1 +1,18 @@
-<p>for-me works!</p>
+<drag-scroll class="main-slider" drag-scroll #drag>
+    <div *ngFor="let mainSliderItem of mainslider" class="drag-scroll mt-2 mx-2 position-relative w-100" drag-scroll-item>
+        <img class="main-slider-img " [src]="mainSliderItem.imagePath" [alt]="mainSliderItem.title">
+        <div class="main-textbox p-3">
+            <h4>{{mainSliderItem.title}}</h4>
+            <p class="pt-2">{{mainSliderItem.description}}</p>
+        </div>
+    </div>
+</drag-scroll>
+<div class="for-you-section">
+    <div class="d-flex justify-content-center flex-wrap"> <!-- card block parent-->
+        <div class="your-card mx-2" *ngFor='let cardItem of cardData'> <!-- card block--> 
+            <img class="card-img-icon" [src]="cardItem.logoPath" [alt]="cardItem.title"> <!-- card icon-->
+            <img class="w-100 card-image" [src]="cardItem.imgPath" [alt]="cardItem.title"> <!-- card img-->
+            <p class="text-center my-1 title ">{{cardItem.title}}</p> <!-- card title-->
+        </div>
+    </div>
+</div>
