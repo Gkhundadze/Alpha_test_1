@@ -1,6 +1,6 @@
 <div>
     <drag-scroll class="main-slider" drag-scroll #drag>
-        <div *ngFor="let mainSliderItem of mainSlider" class="drag-scroll mt-2 mx-2 position-relative w-100" drag-scroll-item>
+        <div *ngFor="let mainSliderItem of mainSlider" class="drag-scroll mt-2 position-relative w-100" drag-scroll-item>
             <img class="main-slider-img " [src]="mainSliderItem.imagePath" [alt]="mainSliderItem.title">
             <div class="main-textbox p-3">
                 <h4>{{mainSliderItem.title}}</h4>
@@ -8,7 +8,7 @@
             </div>
         </div>
     </drag-scroll>
-    <div >
+    <div class="dots-wrapper">
         <span *ngFor="let mainSliderItem of mainSlider; let i = index" (click)=" moveToIndex(i)">
             click
         </span>
@@ -23,11 +23,11 @@
     </div>
     <div class="for-you-section">
         <div class="d-flex justify-content-center flex-wrap"> <!-- card block parent-->
-            <div class="your-card mx-2" *ngFor='let cardItem of cardData'> <!-- card block--> 
+            <a [routerLink]="['/forMe/', cardItem.cardId]" class="your-card mx-2" *ngFor='let cardItem of cardData'> <!-- card block--> 
                 <img class="card-img-icon" [src]="cardItem.logoPath" [alt]="cardItem.title"> <!-- card icon-->
                 <img class="w-100" [src]="cardItem.imgPath" [alt]="cardItem.title"> <!-- card img-->
                 <p class="text-center my-1 title ">{{cardItem.title}}</p> <!-- card title-->
-            </div>
+            </a>
         </div>
     </div>
     <div class="individual-packets-section">
