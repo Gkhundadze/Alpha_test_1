@@ -1,0 +1,21 @@
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { CardDataService } from 'src/app/services/card-data.service';
+
+@Component({
+  selector: 'app-details',
+  templateUrl: './details.component.html',
+  styleUrls: ['./details.component.scss']
+})
+export class DetailsComponent implements OnInit {
+
+  constructor(
+    private router: ActivatedRoute,
+    ) { }
+
+  ngOnInit(): void {
+    let id:number = parseInt(this.router.snapshot.params.id);
+    console.log(typeof id);
+  }
+
+}

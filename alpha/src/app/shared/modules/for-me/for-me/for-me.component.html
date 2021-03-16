@@ -1,5 +1,6 @@
 <drag-scroll class="main-slider" drag-scroll #drag>
-    <div *ngFor="let mainSliderItem of mainslider" class="drag-scroll mt-2 mx-2 position-relative w-100" drag-scroll-item>
+    <div *ngFor="let mainSliderItem of mainslider" class="drag-scroll mt-2 mx-2 position-relative w-100"
+        drag-scroll-item>
         <img class="main-slider-img " [src]="mainSliderItem.imagePath" [alt]="mainSliderItem.title">
         <div class="main-textbox p-3">
             <h4>{{mainSliderItem.title}}</h4>
@@ -8,14 +9,69 @@
     </div>
 </drag-scroll>
 <div class="for-you-section">
-    <div class="d-flex justify-content-center flex-wrap"> <!-- card block parent-->
-        <div class="your-card mx-2" *ngFor='let cardItem of cardData'> <!-- card block--> 
+    <div class="d-flex justify-content-center flex-wrap">
+        <!-- card block parent-->
+        <div class="your-card mx-2" *ngFor='let cardItem of cardData'>
+            <!-- card block-->
             <a [routerLink]='["/forMe/", cardItem.cardId]'>
                 <img class="card-img-icon" [src]="cardItem.logoPath" [alt]="cardItem.title"> <!-- card icon-->
                 <img class="w-100 card-image" [src]="cardItem.imgPath" [alt]="cardItem.title"> <!-- card img-->
                 <p class="text-center my-1 title ">{{cardItem.title}}</p> <!-- card title-->
             </a>
-            
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="order-wrapper">
+        <p class="text-center my-2">მანქანის მართვის დროს გზა მოულოდნელობებით სავსეა. ავტომობილის დაზღვევით შეძლებ
+            საკუთარი ფინანსების დაცვას და ისარგებლებ 24 საათიანი ავტო ასისტანსის მომსახურებით. ავტოსაგზაო შემთხვევისას,
+            ავტო დაზღვევა დაგეხმარება, აღადგინო ან შეცვალო ავტომობილის დაზიანებული ნაწილები და დაუბრუნდე ცხოვრების ჩვეულ
+            რიტმს უმოკლეს ვადაში.</p>
+        <div class="insurance-order-textbox">
+            <h5 class="title my-2 text-center">ჩვენ ვაზღვევთ ყველა სატრანსპორტო საშუალებას</h5>
+            <div class="list-wrapper d-flex justify-content-center">
+                <ul class="mr-3">
+                    <li class="mb-1">სედანი</li>
+                    <li class="mb-1">ჰეჩბექი</li>
+                    <li class="mb-1">კუპე</li>
+                    <li class="mb-1">კაბრიოლეტი</li>
+                    <li class="mb-1">ჯიპი</li>
+                    <li class="mb-1">უნივერსალი</li>
+                </ul>
+                <ul class="ml-3">
+                    <li class="mb-1">პიკაპი</li>
+                    <li class="mb-1">მინივენი</li>
+                    <li class="mb-1">მიკროავტობუსი</li>
+                    <li class="mb-1">ფურგუნი</li>
+                    <li class="mb-1">სპეცტექნიკა</li>
+                    <li class="mb-1">სხვა</li>
+                </ul>
+            </div>
+            <h6 class="text-center my-3">ჩვენ ვაზღვევთ ნებისმიერი დანიშნულებით</h6>
+            <div class="icons-wrapper d-flex justify-content-center">
+                <div class="box d-flex flex-column">
+                    <a href="#">
+                        <img src="../../../../../assets/insurance-icons/conditions_icon.png" alt="conditions">
+                        <span class="mx-1 text-center">პირობები</span>
+                    </a>
+                </div>
+                <div class="box d-flex flex-column mx-3">
+                    <a href="#">
+                        <img src="../../../../../assets/insurance-icons/contract_icon.png" alt="contract">
+                        <span class="mr-1 text-center">ხელშეკრულება</span>
+                    </a>
+                </div>
+                <div class="box d-flex flex-column">
+                    <a href="#">
+                        <img src="../../../../../assets/insurance-icons/tariffs_icon.png" alt="tarriffs">
+                        <span class="ml-3 text-center">ტარიფები</span>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-lg text-white px-5 my-2 buy-btn" role="button">შეძენა</button>
+            </div>
         </div>
     </div>
 </div>

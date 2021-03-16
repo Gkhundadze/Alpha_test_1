@@ -44,6 +44,9 @@
             opacity: 0.9;
             transition: 0.2s;
         }
+        a{
+            text-decoration: none;
+        }
         .card-img-icon{
             position: absolute;
             top: 5%;
@@ -55,4 +58,36 @@
             color: #5C656B;
         }
     }
+}
+.order-wrapper{
+    p{
+        font-size: 16px;
+    }
+}
+.list-wrapper{
+    ul{
+        list-style: unset;
+    };
+}
+.icons-wrapper{
+    .box{
+        height: 115px;
+        width: 95px;
+        span{
+            color: #E84F5B;
+        }
+        a{
+            text-decoration: none;
+        }
+    :hover{
+        transform: scale(1.1);
+        transition: 0.3s;
+    }    
+    }
+}
+.buy-btn{
+    background-color: #E84F5B;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 30px;
 }

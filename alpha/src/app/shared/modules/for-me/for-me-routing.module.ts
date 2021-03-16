@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { DetailsComponent } from './details/details.component';
 import { ForMeComponent } from './for-me/for-me.component';
 
 const routes: Routes = [
@@ -9,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: ":id",
-    component: ForMeComponent
+    component: DetailsComponent
   },
 ];
 

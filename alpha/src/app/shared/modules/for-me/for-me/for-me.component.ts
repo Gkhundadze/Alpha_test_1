@@ -27,11 +27,6 @@ export class ForMeComponent implements OnInit {
   ngOnInit(): void {
     this.mainslider = this.MainSliderDb.insuranceMainData;
     this.cardData = this.cards.insuranceCards;
-
-    
-
-    
-    
   }
 
 }
