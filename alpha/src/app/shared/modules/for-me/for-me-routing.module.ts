@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path: "",
     component: ForMeComponent
-  }
+  },
+  {
+    path: ":id",
+    component: ForMeComponent
+  },
 ];
 
 @NgModule({

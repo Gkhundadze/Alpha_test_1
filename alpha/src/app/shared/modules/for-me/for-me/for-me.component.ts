@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { DragScrollComponent } from 'ngx-drag-scroll';
 import { CardData } from 'src/app/interfaces/card-data';
 import { MainSliderData } from 'src/app/interfaces/main-slider-data';
@@ -16,6 +17,7 @@ export class ForMeComponent implements OnInit {
   constructor(
     private MainSliderDb:InsuranceMainSliderService,
     private cards: InsuranceCardsService,
+    private router: ActivatedRoute,
     ) { }
   // @ViewChild('nav', {read: DragScrollComponent, static: true}) ds!: DragScrollComponent;
 
@@ -25,6 +27,10 @@ export class ForMeComponent implements OnInit {
   ngOnInit(): void {
     this.mainslider = this.MainSliderDb.insuranceMainData;
     this.cardData = this.cards.insuranceCards;
+
+    
+
+    
     
   }
 

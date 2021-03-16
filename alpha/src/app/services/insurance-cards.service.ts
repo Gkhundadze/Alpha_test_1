@@ -14,13 +14,13 @@ public insuranceCards:CardData[] = [
     title: 'ავტომობილის დაზღვევა'
   },
   {
-    cardId: 0,
+    cardId: 1,
     logoPath: '../../../../../../assets/main-cards/automobile-insurance-icon.png',
     imgPath: '../../../../../../assets/insurance-cards/resmonsibility_insurance.png',
     title: 'პასუხისმგებლობის დაზღვევა'
   },
   {
-    cardId: 0,
+    cardId: 2,
     logoPath: '../../../../../../assets/main-cards/automobile-insurance-icon.png',
     imgPath: '../../../../../../assets/insurance-cards/driver_passenger_insurance.png',
     title: 'მძღოლისა და მგზავრის დაზღვევა'

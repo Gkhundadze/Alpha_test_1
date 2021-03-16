@@ -10,9 +10,12 @@
 <div class="for-you-section">
     <div class="d-flex justify-content-center flex-wrap"> <!-- card block parent-->
         <div class="your-card mx-2" *ngFor='let cardItem of cardData'> <!-- card block--> 
-            <img class="card-img-icon" [src]="cardItem.logoPath" [alt]="cardItem.title"> <!-- card icon-->
-            <img class="w-100 card-image" [src]="cardItem.imgPath" [alt]="cardItem.title"> <!-- card img-->
-            <p class="text-center my-1 title ">{{cardItem.title}}</p> <!-- card title-->
+            <a [routerLink]='["/forMe/", cardItem.cardId]'>
+                <img class="card-img-icon" [src]="cardItem.logoPath" [alt]="cardItem.title"> <!-- card icon-->
+                <img class="w-100 card-image" [src]="cardItem.imgPath" [alt]="cardItem.title"> <!-- card img-->
+                <p class="text-center my-1 title ">{{cardItem.title}}</p> <!-- card title-->
+            </a>
+            
         </div>
     </div>
 </div>
